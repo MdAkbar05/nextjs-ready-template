@@ -1,0 +1,40 @@
+/*Only for components layer + utilities layer */
+.linearBG {
+  background: #f9f9f9;
+  background: linear-gradient(
+    0deg,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(255, 222, 164, 1) 100%
+  );
+}
+.linearBGReverse {
+  background: #f9f9f9;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 222, 164, 1) 0%,
+    rgba(249, 249, 249, 1) 100%
+  );
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li button::before {
+  background-color: var(--color-secondary) !important;
+  content: "" !important;
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 100%;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  background-color: var(--color-bg) !important;
+  font-size: 40px !important;
+  margin-left: -12px !important;
+  border-radius: 100% !important;
+  color: var(--color-secondary) !important;
+}

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "./variables.css";
+@import "./mixins.css";
+
+@theme {
+  --breakpoint-sm: 360px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+}
+
+@layer base {
+  body {
+    @apply bg-bg dark:bg-text text-text dark:text-bg font-inter;
+  }
+  h1 {
+    @apply md:text-[50px] text-2xl font-extrabold;
+  }
+  h2 {
+    @apply text-xl md:text-4xl font-bold;
+  }
+  h3 {
+    @apply text-lg md:text-2xl font-bold;
+  }
+  h4 {
+    @apply text-xl font-bold;
+  }
+
+  h6 {
+    @apply text-base md:text-lg font-semibold;
+  }
+
+  button {
+    @apply text-base font-bold;
+  }
+
+  p {
+    @apply text-base font-medium;
+  }
+  a {
+    @apply text-base font-medium font-poppins transition-all duration-300;
+  }
+  a:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-bg);
+  }
+  section {
+    @apply container mx-auto;
+  }
+}

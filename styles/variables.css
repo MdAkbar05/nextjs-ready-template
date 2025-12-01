@@ -1,0 +1,10 @@
+@theme {
+  --color-primary: #ffa200;
+  --color-secondary: #2f9b43;
+  --color-text: #272727;
+  --color-white: #ffffff;
+  --color-bg: #f8fafc;
+  --color-footer: #262112;
+  --font-poppins: var(--font-poppins);
+  --font-inter: var(--font-inter);
+}
